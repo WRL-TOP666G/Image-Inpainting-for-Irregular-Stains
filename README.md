@@ -1,1 +1,1 @@
-# Image-Inpainting-for-Irregular-Stains
+# Image Inpainting for Irregular Stains
