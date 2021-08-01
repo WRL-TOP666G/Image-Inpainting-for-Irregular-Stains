@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Image Inpainting</title>
+        <link rel="stylesheet"    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        {% include 'includes/_navbar.html' %}
+    
+        <div>
+            {% include 'includes/_messages.html' %}
+            {% block body %}{% endblock %}
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+        <script src="//cdn.ckeditor.com/4.16.1/basic/ckeditor.js"></script>
+        <script type="text/javascript">
+            ckeditor.replace('editor')
+        </script>
+    </body>
+
+
+</html>

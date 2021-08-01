@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div class="jumbotron text-center">
+        <h1> Welcome To FlaskApp</h1>
+        <p class="lead"> This is application is built on the Python Flask framework and ~</p>
+    </div>
+    <!-- Put model here-->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="experience" placeholder="Experience" required="required" />
+        <input type="text" name="test_score" placeholder="Test Score" required="required" />
+		<input type="text" name="interview_score" placeholder="Interview Score" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+{% endblock %}
